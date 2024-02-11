@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Breakout Game</title>
+<link rel="stylesheet" type="text/css" href="breakoutstyle.css">
+</head>
+<body>
+<div id="game-container">
+    <canvas id="gameCanvas" width="750" height="600"></canvas>
+    <button id="start-button">Start Game</button>
+    <button id="restart-button" style="display: none;">Restart Game</button>
+    <button id="win-button">End</button>
+</div>
+<div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content">
+        <p>Congratulations! You win!</p>
+        <p>Click <a href="#">here</a> to open a present!</p>
+    </div>
+</div>
+<div id="popupContainer">
+    <div id="popupContent">
+        <h2>Congratulations! You Win!</h2>
+        <br><br>
+        <p>Click the heart for a SURPRISE!!!!!</p>
+        <div class="container">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/13.0.2/markdown-it.min.js"></script>
+
+            <link rel="stylesheet" href="style.css">
+            <script src="script.js"></script>
+            <div id="message-container" style="display: none;height: 0px;overflow-y: hidden;">
+                <p id="message"></p>
+            </div>
+
+            <div class="heart-container" style="margin-top: 0px;">
+                <i id="solid-heart" class="fa-solid fa-heart fa-beat fa-2x" style="color: #ff0000;"></i>
+            </div>
+        </div>
+    <span id="closeBtn" onclick="closePopup()">X</span>
+</div>
+<script src="breakoutscript.js"></script>
+</body>
+</html>
